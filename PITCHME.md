@@ -1,7 +1,8 @@
 
-## Visual code examples
 
-### Fractacls
+# Visual code examples
+
+### Fractals
 
 ### Machine vision/generation
 
