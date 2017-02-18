@@ -34,3 +34,18 @@ function kill(n) {
   nextMap[n] = 0;
   updateDeadCell(n);
 }
+
+/**
+ * Example code below!  Uncomment to make a few cells "live".
+ */
+
+//live(100);
+//live(101);
+//live(102);
+//live(103);
+//live(200);
+//live(201);
+//live(202);
+//live(203);
+//
+//draw();

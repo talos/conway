@@ -80,3 +80,20 @@ function updateLiveCell(n) {
 function updateDeadCell(n) {
   updateCell(n, 255, 255, 255);
 }
+
+/**
+ * Example code below! Uncomment to draw a black, red, green, and blue pixels
+ * in one row, and black pixels below them.
+ */
+
+//updateCell(100, 0, 0, 0);
+//updateCell(101, 255, 0, 0);
+//updateCell(102, 0, 255, 0);
+//updateCell(103, 0, 0, 255);
+
+//updateCell(200, 0, 0, 0);
+//updateCell(201, 0, 0, 0);
+//updateCell(202, 0, 0, 0);
+//updateCell(203, 0, 0, 0);
+
+//draw();
