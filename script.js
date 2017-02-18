@@ -328,22 +328,28 @@ canvas.addEventListener('mousemove', function (evt) {
  * Function to build creatures and examples of creatures to populate the world.
  * ****************/
 
-// Make a creature at X and Y
-function makeCreature(form, x, y, rotation) {
-  var a, b, val;
-  rotation = rotation || 0;
-  form.reverse();
-  form.forEach(function(row, rownum) {
+// Make a creature at left and top
+function makeCreature(rows, left, top, mirrorLeft, mirrorRight) {
+  var x, y, val;
+  //rotation = rotation || 0;
+  rows.forEach(function(row, rownum) {
     row.split('').forEach(function(_, charnum) {
-      a = rotation % 2 === 0 ? charnum : rownum;
-      b = rotation % 2 === 0 ? rownum : charnum;
-      val = form[b][a];
+      //x = rotation % 2 === 0 ? charnum : rownum;
+      //y = rotation % 2 === 0 ? rownum : charnum;
+      val = rows[rownum][charnum];
       if (val !== ' ') {
-        live(xy2n(x + a, y + b));
+        live(xy2n(left - rownum, top - charnum));
       }
     });
   });
 }
+
+var loaf = [
+  '  x ',
+  ' x x',
+  'x  x',
+  ' xx '
+];
 
 var blinker = [
   ' x ',
@@ -363,7 +369,7 @@ var rPentomino = [
   ' x '
 ];
 
-makeCreature(glider, width/2, height/2, 1);
+makeCreature(loaf, width/2, height/2, 1);
 
 /**************** *
  * End Menagerie
