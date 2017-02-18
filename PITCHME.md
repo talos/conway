@@ -1,32 +1,32 @@
-# HSLIDE
+#HSLIDE
 
 ### Generating visuals from code
 
-# HSLIDE
+#HSLIDE
 
 ### Fractals
 
-# HSLIDE
+#HSLIDE
 
 ### Machine vision/generation
 
-# HSLIDE
+#HSLIDE
 
 ### "Generative art"
 
 #### Conway's game of life
 
-# HSLIDE
+#HSLIDE
 
 ## Fundamentals of coding in the browser
 
-# HSLIDE
+#HSLIDE
 
 ### Setting up your development environment
 
 [JSFiddle!](jsfiddle.net)
 
-# HSLIDE
+#HSLIDE
 
 ### Diagram of HTML, CSS and JS
 
