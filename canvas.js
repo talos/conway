@@ -4,7 +4,9 @@
 /***************** *
  * Canvas
  *
- * Get the objects that give us access to our canvas drawing space.
+ * Get the objects that give us access to our canvas drawing space, as well as
+ * functions that make it easier for us to draw to it.
+ *
  * *****************/
 
 // We can modify and access any of our HTML in JavaScript by its "id".
