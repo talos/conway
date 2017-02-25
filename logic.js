@@ -42,7 +42,7 @@ function liveNeighbors(n) {
  * 4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
  */
 function shouldLive(liveNeighbors, isAlive) {
-  if (isAlive && (liveNeighbors === 2 || liveNeighbors === 3 || liveNeighbors === 8)) {
+  if (isAlive && (liveNeighbors === 2 || liveNeighbors === 3)) {
     return true;
   } else if (!isAlive && liveNeighbors === 3) {
     return true;
