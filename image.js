@@ -48,8 +48,8 @@ function updateCell(n, callback) {
   n = n * 4;
   var rgba = callback(imageData.data[n], imageData.data[n + 1],
                       imageData.data[n + 2], imageData.data[n + 3],
-                      otherImageData.data[n], otherImageData.data[n + 1],
-                      otherImageData.data[n + 2], otherImageData.data[n + 3]
+                      otherImageData.data[n] || 0, otherImageData.data[n + 1] || 0,
+                      otherImageData.data[n + 2] || 0, otherImageData.data[n + 3] || 255
                      );
   imageData.data[n] = rgba[0];
   imageData.data[n + 1] = rgba[1];
@@ -71,7 +71,6 @@ function updateLiveCell(n) {
  */
 function updateDeadCell(n) {
   updateCell(n, (r, g, b, a, ir, ig, ib, ia) =>
-              //[r * 0.75, g * 0.75, b * 0.75, a]
               [(r + ir) / 2, (g + ig) / 2, (b + ig) / 2, 255]
             );
 }

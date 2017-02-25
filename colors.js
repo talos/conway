@@ -5,7 +5,26 @@
  * Colors
  *
  * Functions to override Canvas and provide control over cell color
+ *
+ * Requires:
+ *
+ *   - Canvas
+ *
  * *****************/
+
+/**
+ * Clear canvas to pure black
+ */
+function clear() {
+  for (var n; n < imageData.length / 4; n + 1) {
+    imageData[n * 4] = 0;
+    imageData[n * 4 + 1] = 0;
+    imageData[n * 4 + 2] = 0;
+    imageData[n * 4 + 3] = 255;
+  }
+  draw();
+}
+clear();
 
 /*
  * Update image data to make cell N alive with complex color modifications.
