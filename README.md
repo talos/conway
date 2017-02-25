@@ -4,7 +4,8 @@
 2. Copy the contents of
    [index.html](https://raw.githubusercontent.com/talos/conway/gh-pages/index.html)
    into the "HTML" section of the Fiddle.
-3. For each of the sections below, copy the appropriate code in as we review it
+3. Copy the contents of [style.css](https://raw.githubusercontent.com/talos/conway/gh-pages/style.css)
+4. For each of the sections below, copy the appropriate code in as we review it
    to build up the pieces of the simulation.
 
 # The components
