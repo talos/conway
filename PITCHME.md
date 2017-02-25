@@ -4,6 +4,14 @@
 
 #HSLIDE
 
+### Goals!
+
+* Comfort with writing code in the browser
+* Understanding of basic concepts to tweak & modify code snippets
+* Producing some visuals from code!
+
+#HSLIDE
+
 ### Fractals
 
 #HSLIDE
@@ -14,7 +22,16 @@
 
 ### "Generative art"
 
+* following a consistent set of rules repeatedly to produce a result
+* does not need to be done by a computer! but way easier to run these systems
+  quickly and automatically with them
+
 #### Conway's game of life
+
+* small set of rules, complex results
+* lots of opportunity for an artist to play, mess with inputs
+
+* (description of what it is)
 
 #HSLIDE
 

@@ -1,5 +1,5 @@
 /* jshint esnext: true */
-/* globals document, Uint8ClampedArray, width, scale, imageData, drawLiveCell, drawDeadCell */
+/* globals document, Uint8ClampedArray, width, imageData, drawLiveCell, drawDeadCell */
 
 /***************** *
  * Data
@@ -10,7 +10,7 @@
  * Objects that store the data necessary for game state.
  * *****************/
 
-var map = new Uint8ClampedArray(imageData.data.length / (4 * scale * scale));
+var map = new Uint8ClampedArray(imageData.data.length / 4);
 var nextMap = new Uint8ClampedArray(map.length);
 
 /**

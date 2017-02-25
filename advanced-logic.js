@@ -1,5 +1,5 @@
 /* jshint esnext: true */
-/* globals document, Uint8ClampedArray, width, height, map, nextMap, imageData, scale */
+/* globals document, Uint8ClampedArray, width, height, map, nextMap, imageData */
 
 /***************** *
  * Logic

@@ -27,8 +27,12 @@ function handleMouseDown(evt) {
     stopTimer();
     pause = true;
   }
-  var y = Math.floor(evt.offsetY / scale);
-  var x = Math.floor(evt.offsetX / scale);
+  var canvasWidth = Number(getComputedStyle(canvas).width.slice(0, -2));
+  var canvasHeight = Number(getComputedStyle(canvas).width.slice(0, -2));
+  var xscale = canvasWidth / width;
+  var yscale = canvasHeight / height;
+  var x = Math.floor(evt.offsetX / xscale);
+  var y = Math.floor(evt.offsetY / yscale);
   live(xy2n(x, y));
   draw();
 }
